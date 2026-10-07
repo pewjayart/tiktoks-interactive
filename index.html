@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b0c12">
+    <meta name="description" content="PewJay Live gift and social action picker">
+    <title>PewJay Live — Gifts & Social</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<main class="app">
+    <header class="topbar">
+        <a class="brand" href="#" aria-label="PewJay Live home">
+            <span class="brand-mark"><i class="fa-brands fa-tiktok"></i></span>
+            <span class="brand-text"><strong>PEWJAY <span>LIVE</span></strong><small>Where the community connects</small></span>
+        </a>
+        <div class="topbar-center"><span class="live-indicator"></span><span>Live mode</span><strong>ON AIR</strong></div>
+        <div class="clock"><span id="date"></span><strong><span id="time"></span><abbr class="timezone" title="Philippine Standard Time">PHST</abbr></strong></div>
+    </header>
+
+    <section class="workspace">
+        <aside class="left-panel panel">
+            <div class="panel-heading">
+                <div><span class="eyebrow">LIVE TOOLKIT</span><h2>Action Library</h2></div>
+                <span class="heading-icon"><i class="fa-solid fa-sparkles"></i></span>
+            </div>
+
+            <section class="info-block">
+                <div class="section-title"><span class="section-icon gift-icon"><i class="fa-solid fa-gift"></i></span><div><h3>Gifts</h3><p>Show your support with coins</p></div><span class="section-count">01</span></div>
+                <div class="gift-info-grid">
+                    <div class="info-gift"><img src="assets/gifts/eba3a9bb85c33e017f3648eaf88d7189~tplv-obj.webp" alt="Rose gift"><div><strong>Rose</strong><span>1 coin</span></div></div>
+                    <div class="info-gift"><img src="assets/gifts/3b7e12fca3911a4bb65b699b8b0ffb8f.png~tplv-obj.webp" alt="Shining Starlit gift"><div><strong>Shining Starlit</strong><span>5 coins</span></div></div>
+                    <div class="info-gift"><img src="assets/gifts/eb77ead5c3abb6da6034d3cf6cfeb438~tplv-obj.webp" alt="Rosa gift"><div><strong>Rosa</strong><span>10 coins</span></div></div>
+                    <div class="info-gift"><img src="assets/gifts/4e7ad6bdf0a1d860c538f38026d4e812~tplv-obj.webp" alt="Doughnut gift"><div><strong>Doughnut</strong><span>30 coins</span></div></div>
+                    <div class="info-gift"><img src="assets/gifts/374dfe46d5b09ce1db19be06202d34f5.png~tplv-obj.webp" alt="Hand Heart gift"><div><strong>Hand Heart</strong><span>100 coins</span></div></div>
+                    <div class="info-gift"><img src="assets/gifts/dd06007ade737f1001977590b11d3f61~tplv-obj.webp" alt="Money Gun gift"><div><strong>Money Gun</strong><span>500 coins</span></div></div>
+                </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <section class="info-block social-block">
+                <div class="section-title"><span class="section-icon social-icon"><i class="fa-solid fa-user-group"></i></span><div><h3>Social</h3><p>Grow your community</p></div><span class="section-count">02</span></div>
+                <div class="social-info">
+                    <div class="social-info-item"><span class="social-symbol follow-symbol"><img src="assets/social/tiktok-logo-tik-tok-logo-icon-png-svg.png" alt="" class="social-icon-image"></span><div><strong>Follow</strong><span>New follower</span></div></div>
+                    <div class="social-info-item"><span class="social-symbol subscribe-symbol"><img src="assets/social/1384060.png" alt="" class="social-icon-image"></span><div><strong>Subscribe</strong><span>Support the creator</span></div></div>
+                </div>
+            </section>
+
+            <div class="creator-card">
+                <span class="creator-avatar"><img src="assets/icon.jpg" alt="PewJay"></span>
+                <div><strong>PewJay</strong><span>@pewjay_art</span></div>
+                <span class="creator-check"><i class="fa-solid fa-check"></i></span>
+            </div>
+        </aside>
+
+        <section class="center-panel">
+            <section class="welcome-card">
+                <div class="welcome-orb orb-one"></div><div class="welcome-orb orb-two"></div>
+                <div class="welcome-content">
+                    <span class="welcome-label"><i class="fa-solid fa-wand-magic-sparkles"></i> YOUR LIVE, YOUR MOMENT</span>
+                    <h1>Make every live<br><span>moment special.</span></h1>
+                    <p>Choose a gift or social action and show your<br class="desktop-break">community how much you appreciate them.</p>
+                    <div class="welcome-stats"><span><i class="fa-solid fa-gift"></i> Gifts <b>01</b></span><span><i class="fa-solid fa-heart"></i> Social <b>02</b></span></div>
+                </div>
+                <div class="welcome-art" aria-hidden="true"><span class="art-ring ring-one"></span><span class="art-ring ring-two"></span><span class="art-spark spark-one">✦</span><span class="art-spark spark-two">✧</span><span class="art-gift"><i class="fa-solid fa-gift"></i></span><span class="art-heart"><i class="fa-solid fa-heart"></i></span><span class="art-star"><i class="fa-solid fa-star"></i></span></div>
+                <div class="welcome-caption"><span class="caption-dot"></span> LIVE COMMUNITY <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </section>
+
+            <section class="history-card panel">
+                <div class="history-header">
+                    <div class="history-title"><span class="section-icon history-icon"><i class="fa-solid fa-clock-rotate-left"></i></span><div><span class="eyebrow">YOUR STREAM</span><h2>Recent Activity</h2></div></div>
+                    <button id="clearHistory" class="icon-button" title="Clear history" aria-label="Clear history"><i class="fa-solid fa-trash"></i></button>
+                </div>
+                <div class="history-list" id="historyList">
+                    <div class="empty-state"><span class="empty-icon"><i class="fa-regular fa-clock"></i></span><strong>No activity yet</strong><span>Enter a name, then choose a gift or social action.</span></div>
+                </div>
+                <div class="history-foot"><span><i class="fa-solid fa-shield-heart"></i> Celebrating community moments</span><span id="activityCount">0 activities</span></div>
+            </section>
+        </section>
+
+        <aside class="right-panel">
+            <section class="side-card panel">
+                <div class="side-header"><div><span class="side-icon gift-side"><i class="fa-solid fa-gift"></i></span><div><span class="eyebrow">THANK YOU</span><h2>Gift History</h2></div></div><small id="giftCount">0</small></div>
+                <div class="side-list" id="giftHistory"><div class="side-empty"><i class="fa-solid fa-box-open"></i><span>No gifts yet</span></div></div>
+            </section>
+            <section class="side-card panel">
+                <div class="side-header"><div><span class="side-icon social-side"><i class="fa-solid fa-users"></i></span><div><span class="eyebrow">NEW CONNECTIONS</span><h2>Social History</h2></div></div><small id="socialCount">0</small></div>
+                <div class="side-list" id="socialHistory"><div class="side-empty"><i class="fa-solid fa-user-group"></i><span>No actions yet</span></div></div>
+            </section>
+            <section class="side-card preview-card panel">
+                <div class="side-header"><div><span class="side-icon preview-side"><i class="fa-solid fa-wand-magic-sparkles"></i></span><div><span class="eyebrow">READY TO CELEBRATE</span><h2>Current Pick</h2></div></div></div>
+                <div class="preview" id="previewContent"><div class="preview-empty"><span class="preview-hand"><i class="fa-solid fa-hand-pointer"></i></span><strong>Pick your next moment</strong><span>Your selected gift or action<br>will appear here.</span></div></div>
+            </section>
+        </aside>
+    </section>
+
+    <footer class="control-bar">
+        <label class="name-box"><span class="input-icon"><i class="fa-solid fa-user"></i></span><input id="nameInput" type="text" placeholder="Enter a username" maxlength="40" autocomplete="off" aria-label="Username"><button id="clearName" type="button" title="Clear input" aria-label="Clear input"><i class="fa-solid fa-xmark"></i></button></label>
+        <button id="giftBtn" class="control-button gift-button" type="button"><i class="fa-solid fa-gift"></i><span>Choose a gift</span><i class="fa-solid fa-arrow-right button-arrow"></i></button>
+        <button id="socialBtn" class="control-button social-button" type="button"><i class="fa-solid fa-users"></i><span>Social action</span><i class="fa-solid fa-arrow-right button-arrow"></i></button>
+        <button id="saveHistoryBtn" class="control-button primary" type="button"><i class="fa-solid fa-circle-check"></i><span>Record</span></button>
+        <button id="portraitBtn" class="control-button export" type="button" title="Save all recorded gifts and social actions as a portrait image"><i class="fa-solid fa-arrow-down-to-line"></i><span>Save portrait</span></button>
+    </footer>
+</main>
+
+<div class="overlay" id="giftMenu" aria-hidden="true">
+    <section class="picker-card" role="dialog" aria-modal="true" aria-labelledby="giftPickerTitle">
+        <div class="picker-header"><div><span class="eyebrow">SEND SOME LOVE</span><strong id="giftPickerTitle">Choose a gift</strong><span>Send a little something to show you care</span></div><button class="close-menu" type="button" aria-label="Close"><i class="fa-solid fa-xmark"></i></button></div>
+        <div class="gift-menu-grid">
+            <button class="gift-choice" type="button" data-type="gift" data-name="Rose" data-coins="1" data-image="assets/gifts/eba3a9bb85c33e017f3648eaf88d7189~tplv-obj.webp"><span class="choice-image"><img src="assets/gifts/eba3a9bb85c33e017f3648eaf88d7189~tplv-obj.webp" alt=""></span><strong>Rose</strong><span class="coin-label"><i class="fa-solid fa-coins"></i> 1</span></button>
+            <button class="gift-choice" type="button" data-type="gift" data-name="Shining Starlit" data-coins="5" data-image="assets/gifts/3b7e12fca3911a4bb65b699b8b0ffb8f.png~tplv-obj.webp"><span class="choice-image"><img src="assets/gifts/3b7e12fca3911a4bb65b699b8b0ffb8f.png~tplv-obj.webp" alt=""></span><strong>Shining Starlit</strong><span class="coin-label"><i class="fa-solid fa-coins"></i> 5</span></button>
+            <button class="gift-choice" type="button" data-type="gift" data-name="Rosa" data-coins="10" data-image="assets/gifts/eb77ead5c3abb6da6034d3cf6cfeb438~tplv-obj.webp"><span class="choice-image"><img src="assets/gifts/eb77ead5c3abb6da6034d3cf6cfeb438~tplv-obj.webp" alt=""></span><strong>Rosa</strong><span class="coin-label"><i class="fa-solid fa-coins"></i> 10</span></button>
+            <button class="gift-choice" type="button" data-type="gift" data-name="Doughnut" data-coins="30" data-image="assets/gifts/4e7ad6bdf0a1d860c538f38026d4e812~tplv-obj.webp"><span class="choice-image"><img src="assets/gifts/4e7ad6bdf0a1d860c538f38026d4e812~tplv-obj.webp" alt=""></span><strong>Doughnut</strong><span class="coin-label"><i class="fa-solid fa-coins"></i> 30</span></button>
+            <button class="gift-choice" type="button" data-type="gift" data-name="Hand Heart" data-coins="100" data-image="assets/gifts/374dfe46d5b09ce1db19be06202d34f5.png~tplv-obj.webp"><span class="choice-image"><img src="assets/gifts/374dfe46d5b09ce1db19be06202d34f5.png~tplv-obj.webp" alt=""></span><strong>Hand Heart</strong><span class="coin-label"><i class="fa-solid fa-coins"></i> 100</span></button>
+            <button class="gift-choice" type="button" data-type="gift" data-name="Money Gun" data-coins="500" data-image="assets/gifts/dd06007ade737f1001977590b11d3f61~tplv-obj.webp"><span class="choice-image"><img src="assets/gifts/dd06007ade737f1001977590b11d3f61~tplv-obj.webp" alt=""></span><strong>Money Gun</strong><span class="coin-label"><i class="fa-solid fa-coins"></i> 500</span></button>
+        </div>
+    </section>
+</div>
+
+<div class="overlay" id="socialMenu" aria-hidden="true">
+    <section class="picker-card social-picker" role="dialog" aria-modal="true" aria-labelledby="socialPickerTitle">
+        <div class="picker-header"><div><span class="eyebrow">GROW TOGETHER</span><strong id="socialPickerTitle">Choose an action</strong><span>Show your appreciation and grow together</span></div><button class="close-menu" type="button" aria-label="Close"><i class="fa-solid fa-xmark"></i></button></div>
+        <div class="social-menu-grid">
+            <button class="social-choice" type="button" data-type="social" data-name="Follow" data-image="assets/social/tiktok-logo-tik-tok-logo-icon-png-svg.png"><span class="social-choice-icon follow-symbol"><img src="assets/social/tiktok-logo-tik-tok-logo-icon-png-svg.png" alt="" class="social-icon-image"></span><span><strong>Follow</strong><small>Welcome a new follower</small></span><i class="fa-solid fa-arrow-right"></i></button>
+            <button class="social-choice" type="button" data-type="social" data-name="Subscribe" data-image="assets/social/1384060.png"><span class="social-choice-icon subscribe-symbol"><img src="assets/social/1384060.png" alt="" class="social-icon-image"></span><span><strong>Subscribe</strong><small>Support the creator</small></span><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </section>
+</div>
+
+<div class="toast-region" id="toastRegion" aria-live="polite" aria-atomic="true"></div>
+<div class="export-stage" aria-hidden="true">
+    <article class="portrait-card" id="portraitCard">
+        <header class="portrait-header"><span class="portrait-mark"><i class="fa-brands fa-tiktok"></i></span><span class="portrait-live"><i></i> LIVE</span></header>
+        <section class="portrait-intro">
+            <small>PEWJAY LIVE · STREAM RECAP</small>
+            <h1>Community<br>highlights</h1>
+            <p>Thank you for being part of the live.</p>
+            <div class="portrait-summary">
+                <span><i class="fa-solid fa-gift"></i><b id="portraitGiftCount">0</b> gifts</span>
+                <span><i class="fa-solid fa-users"></i><b id="portraitSocialCount">0</b> social actions</span>
+            </div>
+        </section>
+        <section class="portrait-records" id="portraitRecords" aria-label="Recorded activity"></section>
+        <footer class="portrait-footer"><span>@pewjay_art</span><span>THANK YOU FOR THE SUPPORT</span></footer>
+    </article>
+</div>
+</body>
+</html>
